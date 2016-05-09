@@ -100,7 +100,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resourcen\Sensors.Dht.dll" />
     <None Include="project.json" />
+    <None Include="Resourcen\Sensors.Dht.winmd" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.vb">
