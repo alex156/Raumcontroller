@@ -1,6 +1,10 @@
 ﻿''' <summary>
 ''' Provides application-specific behavior to supplement the default Application class.
 ''' </summary>
+''' 
+Imports Sensors
+Imports Windows.Devices.Gpio
+
 NotInheritable Class App
     Inherits Application
 
@@ -28,6 +32,14 @@ NotInheritable Class App
             Me.DebugSettings.EnableFrameRateCounter = True
         End If
 #End If
+
+
+
+        Dim DHT_11 As New Sensors.Dht.Dht11
+
+
+
+
 
         Dim rootFrame As Frame = TryCast(Window.Current.Content, Frame)
 
